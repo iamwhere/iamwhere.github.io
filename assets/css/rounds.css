@@ -1,0 +1,135 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html * {
+  font-family: 'Roboto', serif;
+}
+
+.gm-style-cc {
+    display:none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.blur {
+  filter: blur(25px);
+  }
+
+#pano {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+#cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+
+  background-color: rgba(150,150,150,0.6)
+}
+
+#BEGIN {
+
+  position: absolute;
+
+  z-index: 2;
+  left: 50%;
+  top: 32%;
+  transform: translate(-50%, -50%);
+
+  font-size: 32px;
+  font-weight: 600;
+  font-family: inherit;
+  text-align:center;
+  text-decoration: none;
+
+  border: 0;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 2px;
+  box-sizing: border-box;
+
+  color: rgb(250,250,250,0.4);
+  background-color: rgba(250,250,250,0.2);
+
+  transition: all 0.3s;
+}
+
+  #BEGIN:hover{
+    color: rgba(250,250,250,1);
+    background-color: rgba(250,250,250,0.6);
+  }
+
+#ROTATE {
+
+    position: absolute;
+
+    z-index: 3;
+    right: 10px;
+    bottom: 10px;
+
+    font-size: 14px;
+    font-weight: 300;
+    font-family: inherit;
+    text-align: center;
+    text-decoration: none;
+
+    border: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 80px;
+    height: 25px;
+    border-radius: 2px;
+    box-sizing: border-box;
+
+    color: rgb(250,250,250,0.4);
+    background-color: rgba(250,250,250,0.2);
+
+    transition: all 0.3s;
+}
+
+  #ROTATE:hover{
+    color: rgba(250,250,250,1);
+    background-color: rgba(250,250,250,0.6);
+  }
+
+#PAUSE {
+
+    position: absolute;
+
+    z-index: 3;
+    right: 100px;
+    bottom: 10px;
+
+    font-size: 14px;
+    font-weight: 300;
+    font-family: inherit;
+    text-align: center;
+    text-decoration: none;
+
+    border: 0;
+    box-sizing: border-box;
+    width: 80px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 2px;
+    box-sizing: border-box;
+
+    color: rgb(250,250,250,0.4);
+    background-color: rgba(250,250,250,0.2);
+
+    transition: all 0.3s;
+}
+
+  #PAUSE:hover{
+    color: rgba(250,250,250,1);
+    background-color: rgba(250,250,250,0.6);
+  }

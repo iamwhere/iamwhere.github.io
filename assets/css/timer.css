@@ -1,0 +1,55 @@
+html * {
+  font-family: 'Roboto', serif;
+}
+
+.orange {
+  color: rgb(200,100,0) !important;
+  background-color: rgba(255,255,240,0.75)  !important;
+}
+
+.red {
+  color: rgb(200,0,0) !important;
+  background-color: rgb(255,240,240)  !important;
+}
+
+#timer{
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  top: 10px;
+
+  display:inline-block;
+  padding: 5px 10px;
+  border-radius:2px;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-weight: bold;
+  color: rgb(50,50,50);
+  background-color: rgba(240,240,240,0.75);
+  text-align:center;
+  font-size: 26px;
+  transition: all 1s;
+}
+
+#timer > div{
+	display: inline-block;
+}
+
+#round{
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  top: 10px;
+
+  display:inline-block;
+  padding: 5px 10px;
+  border-radius:2px;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-weight: bold;
+  color: rgb(50,50,50);
+  background-color: rgba(240,240,240,0.75);
+  text-align:center;
+  font-size: 26px;
+  transition: all 1s;
+}

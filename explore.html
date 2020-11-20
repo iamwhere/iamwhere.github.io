@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>i am where? - expore</title>
+      <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/explore.css" />
+    </head>
+
+  <body>
+
+    <div id = "pano"></div>
+
+    <div id = "panel">
+
+      <div id="map"></div>
+      <input id="pac-input" class="controls" type="text" placeholder="Search"/>
+      <div id = "coords">
+
+        <button id="latitude" onclick="copyLat()" class="button primary fit"></button>
+        <button id="longitude" onclick="copyLng()" class="button primary fit"></button>
+
+      </div>
+    </div>
+
+    <table>
+      <tr>
+        <td id="latValue">&nbsp;</td>
+      </tr>
+      <tr>
+        <td id="lngValue">&nbsp;</td>
+      </tr>
+    </table>
+
+    <script type="text/javascript" src="assets/js/explore.js"></script>
+    <script type="text/javascript" src="assets/js/buttons.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKXSboy095HBb0wXzDxsJc_XfODEJRt9A&callback=initialize&libraries=places">
+    </script>
+
+  </body>
+</html>

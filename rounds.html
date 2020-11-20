@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>location estimator</title>
+      <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/rounds.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/timer.css" />
+    </head>
+
+  <body>
+
+    <div id = "timer" class = "hidden">
+      <div>
+        <span class = "minutes"></span>
+      </div>
+      <div><span>:</span></div>
+      <div>
+        <span class = "seconds"></span>
+      </div>
+    </div>
+
+    <div id = "round" >Round 1</div>
+
+    <div id = "cover"></div>
+    <div id = "pano" class = "blur"></div>
+
+    <button id = "BEGIN" onclick = "show('timer'); removeButton('BEGIN'); hide('cover'); removeBlur(); startClock()">BEGIN</button>
+
+    <script type="text/javascript" src="assets/js/rounds.js"></script>
+    <script type="text/javascript" src="assets/js/buttons.js"></script>
+    <script type="text/javascript" src="assets/js/timer.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKXSboy095HBb0wXzDxsJc_XfODEJRt9A&callback=initialize&libraries=places">
+    </script>
+
+  </body>
+</html>
